@@ -1,0 +1,17 @@
+<div class="container-box-item">
+  <h1>Alphabet Pattern</h1>
+  <div class="col-12 mt-4">
+    <input #resultScore type="number" class="form-control">
+  </div>
+  <div class="col column-row-gap">
+    <button class="btn btn-dark" type="button" (click)="starPatternLoop(resultScore.value)">click</button>
+    <button class="btn btn-dark" type="button" (click)="clear()">clear</button>
+  </div>
+  <div>
+  <div *ngIf="isShowResult" class="result-content col-10">
+    <p [innerHTML]="totalResult" class="ml-3" style="white-space: pre-line; font-size: larger "></p>
+  </div>
+    </div>
+</div>
+
+

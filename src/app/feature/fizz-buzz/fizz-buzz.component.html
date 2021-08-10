@@ -1,0 +1,19 @@
+<div class="container-box-item">
+  <h1>FIZZ-BUZZ</h1>
+  <div class="col-10 mt-4">
+    <input #resultScore type="number" class="form-control">
+  </div>
+  <div class="col column-row-gap">
+    <button class="btn btn-dark" type="button" (click)="fizzBuzz(resultScore.value)">click</button>
+    <button class="btn btn-dark" type="button" (click)="clear()">clear</button>
+  </div>
+  <div *ngIf="isShowResult" class="d-flex flex-wrap result-content col-10">
+  <div *ngFor="let result of resultTotal" class="result-item" style="white-space: break-spaces"[ngClass]="{
+  'color-yellow': (result === 'Fizz'),
+  'color-blue': (result === 'Buzz'),
+  'color-red': (result === 'Fizz-Buzz')}">
+    {{result}}
+     </div>
+  </div>
+</div>
+

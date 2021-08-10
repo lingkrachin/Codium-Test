@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  background-color: #f8f5f8;
+}
+.column-row-gap {
+  display: flex;
+  padding: 15px;
+  grid-column-gap: 10px;
+}
+.container-box-item {
+  background: #ffffff;
+  margin: 5% 10%;
+  padding: 5%;
+  box-shadow: 0 0 10px mediumpurple;
+}
+.result-size-large {
+  font-size: xx-large;
+}
+.result-content {
+  background-color: #ebe7f9;
+  box-shadow: 0 0 10px mediumpurple;
+  border-radius: 15px;
+  color: rebeccapurple
+}

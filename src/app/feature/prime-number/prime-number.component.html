@@ -1,0 +1,17 @@
+<div class="container-box-item">
+  <h1>Prime Number</h1>
+  <div class="col-10 mt-4">
+    <input #resultScore type="number" class="form-control">
+  </div>
+    <div class="col column-row-gap">
+      <button class="btn btn-dark" type="button" (click)="findPrimeNumber(resultScore.value)">click</button>
+      <button class="btn btn-dark" type="button" (click)="clear()">clear</button>
+    </div>
+<div *ngIf="isShowResult" class="d-flex flex-wrap result-content col-10">
+     <span class="result-size-large ml-3">{{exampleResult}} => </span>
+    <div *ngFor="let result of resultTotal" class="">
+      <span class="result-size-large ml-3" style="white-space: break-spaces">{{result}} </span>
+    </div>
+    </div>
+  </div>
+
