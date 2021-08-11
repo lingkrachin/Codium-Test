@@ -1,6 +1,9 @@
 # CodiumTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
+How to 'RUN'
+1. npm install or npm install tslib
+2. ng serve (optional --open)
 
 ## Development server
 
